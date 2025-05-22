@@ -67,3 +67,16 @@ window.onclick = function (event) {
     modalMais.style.display = "none";
   }
 };
+
+
+// Mostrar/Ocultar senha
+document.getElementById("togglePassword").addEventListener("click", function () {
+  const passField = document.getElementById("password");
+  passField.type = passField.type === "password" ? "text" : "password";
+});
+
+// Abrir cadastro (exemplo de redirecionamento ou abertura futura de modal)
+document.getElementById("abrirCadastro").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("Tela de cadastro será implementada!");
+});

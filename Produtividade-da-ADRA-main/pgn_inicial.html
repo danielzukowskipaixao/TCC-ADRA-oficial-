@@ -10,20 +10,28 @@
   <img src="imagens/usuar.png" alt="Ícone de Usuário" class="user-icon" />
   <h3 id="login">Fazer o login</h3>
 
-  <!-- Modal de Login -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="username">Usuário:</label>
-        <input type="text" id="username" name="username" required /><br /><br />
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required /><br /><br />
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
+  <!-- Modal de Login Moderno -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="imagens/usuar.png" alt="Usuário" style="width: 60px; margin-bottom: 15px;">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuário" required>
+      
+      <div style="position: relative;">
+        <input type="password" id="password" placeholder="Senha" required>
+        <span id="togglePassword" style="position:absolute; right:10px; top:12px; cursor:pointer;">👁️</span>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <p style="margin-top: 10px; color: white;">
+      Ainda não tem conta? <a href="#" id="abrirCadastro" style="color: #ffd700;">Cadastre-se</a>
+    </p>
   </div>
+</div>
+
 
   <div class="container">
     <header class="header">
